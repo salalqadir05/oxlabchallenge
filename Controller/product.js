@@ -5,7 +5,7 @@ const add_product = async (req, res) => {
 
   const query = `
     INSERT INTO product (name, description, price, stock_quantity)
-    VALUES ('${name}', '${description}', ${price}, ${quantity}, ${product_count || 0})
+    VALUES ('${name}', '${description}', ${price}, ${quantity})
     RETURNING *
   `;
 

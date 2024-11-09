@@ -4,6 +4,7 @@ const pool = require('./Database/db');
 const runMigrations = require('./Database/migration');
 const customer = require('./Routes/customer');
 const product = require('./Routes/product');
+// const order = require('./Controller/order');
 dotenv.config();
 
 
@@ -29,6 +30,7 @@ runMigrations();
 
 app.use('/api', customer);
 app.use('/api', product);
+// app.use('/api', order);
 
 
 const port = process.env.PORT || 7000;
