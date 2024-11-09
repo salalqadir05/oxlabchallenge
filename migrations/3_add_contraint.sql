@@ -1,0 +1,9 @@
+-- ALTER TABLE "order"
+-- ADD CONSTRAINT fk_order_customer
+-- FOREIGN KEY (customer_id) REFERENCES customer(customer_id) ON DELETE CASCADE;
+-- ALTER TABLE order_item
+-- ADD CONSTRAINT fk_order_item_order
+-- FOREIGN KEY (order_id) REFERENCES "order"(id) ON DELETE CASCADE;
+-- ALTER TABLE order_item
+-- ADD CONSTRAINT fk_order_item_product
+-- FOREIGN KEY (product_id) REFERENCES product(id) ON DELETE CASCADE;
